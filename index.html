@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hi ,i am shahriar</h1>
-</body>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        img{
+            width: 30px;
+        }
+    </style>
+
+  </head>
+  <body class="max-w-[1920px] mx-auto border-2 border-red-300 h-[100vh]">
+    <!-- nav bar -->
+     <div class="flex justify-between items-center pl-15 pr-10 py-4">
+        <div class="left flex gap-4 items-center">
+            <img src="./asset/logo.png" alt="" style="width: 50px;" class="">
+            <h2 class="text-[#006747] text-lg font-bold">Emergency <br> Sevice</h2>
+
+        </div>
+        <div class="right flex gap-6">
+            <div class="bg-[#41ff6b1a] flex justify-between gap-4 px-9 items-center py-2 rounded-3xl ">
+                <span>0</span>
+               <img src="./asset/heart.png" alt="">
+            </div>
+            <div class="bg-[#41ff6b1a] flex justify-between gap-4 px-9 items-center py-2 rounded-3xl ">
+                <span>100</span>
+               <img src="./asset/coin.png" alt="">
+            </div>
+            <div class="bg-[#00a63e] flex justify-between gap-4 px-9 items-center py-2 rounded-3xl ">
+                <span>100</span>
+               <p>copy</p>
+            </div>
+
+
+        </div>
+     </div>
+
+     <!-- banner section -->
+      <div class="h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center text-center">
+       
+            <img src="./asset/logo-dark.png" style="width: 60px;" alt="">
+        <h1 class="font-semibold text-[40px] text-white">Emergency Service Directory</h1>
+        <p class="text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        
+
+      </div>
+      <!-- card layer -->
+       
+  </body>
 </html>
