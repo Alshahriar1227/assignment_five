@@ -1,3 +1,5 @@
+
+// calling funtion
 function create_child(tex, num) {
  let coin_cnt=parseInt(document.getElementById('coin').innerText);
  if(coin_cnt>=20)
@@ -24,10 +26,11 @@ function create_child(tex, num) {
           </div>
    `;
   document.getElementById("history").appendChild(new_child);
+  alert("📞Calling "+texx+" "+numm+"...");
  }
  else
  {
-    alert("coin must me getter than 20");
+    alert("❌ You have no sufficient.nedded at least 20 coin to call");
  }
 
 }
@@ -92,6 +95,69 @@ document
 
 //   copy funtionality
 
+function call_copy(num){
+
+    let copy_cnt=parseInt(document.getElementById('copy').innerText);
+    copy_cnt+=1;
+    document.getElementById('copy').innerText=copy_cnt;
+    const number = document.getElementById(num).innerText;
+      navigator.clipboard.writeText(number).then(() => {
+        alert("Number has been coppied " + number);
+      }).catch(err => {
+        console.error("has been failed to copy: ", err);
+      });
+
+}
+// national call for copy
+document.getElementById('national_c').addEventListener('click',function(event){
+
+  call_copy("national_n");
+});
+// police call for copy
+document.getElementById('police_c').addEventListener('click',function(event){
+ 
+
+  call_copy("police_n");
+});
+
+// fire call for copy
+document.getElementById('fire_c').addEventListener('click',function(event){
+
+  call_copy("fire_n");
+});
+// ambulace call for copy
+document.getElementById('ambulance_c').addEventListener('click',function(event){
+
+  call_copy("ambulance_n");
+});
+// women call for copy
+document.getElementById('women_c').addEventListener('click',function(event){
+ 
+
+  call_copy("women_n");
+});
+
+// anti corruption call for copy
+document.getElementById('anti_c').addEventListener('click',function(event){
+
+  call_copy("anti_n");
+});
+// electricity call for copy
+document.getElementById('electricity_c').addEventListener('click',function(event){
+
+  call_copy("electricity_n");
+});
+
+// brac call for copy
+document.getElementById('brac_c').addEventListener('click',function(event){
+
+  call_copy("brac_n");
+});
+// railway call for copy
+document.getElementById('railway_c').addEventListener('click',function(event){
+
+  call_copy("railway_n");
+});
 
 
 // heart count funtion
@@ -109,7 +175,7 @@ document.getElementById('national_h').addEventListener('click',function(){
 })
 // polic 
 document.getElementById('police_h').addEventListener('click',function(){
-  console.log("poice connetd")
+  
 
   heart_increase();
 });
