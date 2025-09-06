@@ -86,3 +86,59 @@ document
   .addEventListener("click", function (event) {
     create_child("railway_t", "railway_n");
   });
+
+
+
+
+//   copy funtionality
+
+
+
+// heart count funtion
+function heart_increase()
+{
+  let heart=parseInt(document.getElementById('heart_cnt').innerText);
+  heart+=1;
+  document.getElementById('heart_cnt').innerText=heart;
+
+}
+// national heart
+
+document.getElementById('national_h').addEventListener('click',function(){
+  heart_increase();
+})
+// polic 
+document.getElementById('police_h').addEventListener('click',function(){
+  console.log("poice connetd")
+
+  heart_increase();
+});
+// fire
+document.getElementById('fire_h').addEventListener('click',function(){
+  heart_increase();
+})
+// ambulance
+document.getElementById('ambulance_h').addEventListener('click',function(){
+  heart_increase();
+})
+// woment
+document.getElementById('women_h').addEventListener('click',function(){
+  heart_increase();
+})
+// anti
+document.getElementById('anti_h').addEventListener('click',function(){
+  heart_increase();
+})
+// eletriceity
+document.getElementById('electricity_h').addEventListener('click',function(){
+  heart_increase();
+})
+// brac
+document.getElementById('brac_h').addEventListener('click',function(){
+  heart_increase();
+})
+// railway
+document.getElementById('railway_h').addEventListener('click',function(){
+  heart_increase();
+})
+
