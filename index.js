@@ -208,3 +208,17 @@ document.getElementById('railway_h').addEventListener('click',function(){
   heart_increase();
 })
 
+
+// hover effect
+const classes=document.getElementsByClassName('hvr');
+for(let clas of classes)
+{
+  clas.addEventListener('mouseover',function(){
+    clas.style.backgroundColor="gray";
+  })
+  clas.addEventListener('mouseout',function(){
+    clas.style.backgroundColor="#00a63e"
+  })
+  
+}
+
